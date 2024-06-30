@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00B4FF;
+}
+
+.word-display {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 12px; /* Increased padding */
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    border: 2px solid #ccc; /* Increased border thickness */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: dodgerblue; /* Highlight on focus */
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.8); /* Lighter shadow on focus */
+}
+
+button {
+    padding: 12px 24px; /* Increased padding */
+    font-size: 1.1em; /* Slightly smaller font size */
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#score, #accuracy, #timer {
+    font-weight: bold;
+}
+
+#restartBtn {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 10px;
+    }
+}
